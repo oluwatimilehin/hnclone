@@ -1,14 +1,103 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  width: 837px;
+  margin: auto;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.news-container {
+  text-align: left;
+  background-color: #f6f6ef;
+}
+
+.news-container ul {
+  margin-block-start: 0px;
+}
+
+p {
+  display: inline;
+}
+
+.nav-bar ul {
+  display: inline;
+}
+
+.nav-bar ul > li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
+.sub-menu ul {
+  padding-left: 0px;
+}
+
+.nav-bar {
+  background-color: #ff6600;
+}
+
+.logo {
+  border: 1px white solid;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+
+ul .sub li {
+  display: inline;
+}
+
+.list-item {
+  display: grid;
+  grid-template-areas:
+    "sidebar content"
+    ".      sub";
+  margin-bottom: 20px;
+  grid-template-columns: 50px 1fr;
+  grid-column-gap: 10px;
+}
+
+h4 {
+  display: inline;
+}
+
+.side-bar {
+  grid-area: sidebar;
+  text-align: center;
+  font-size: 10pt;
+  color: #828282;
+  padding-top: 5px;
+}
+
+.main-head {
+  grid-area: content;
+  padding-top: 5px;
+}
+
+.main-head a {
+  color: #828282;
+}
+
+.sub-menu {
+  grid-area: sub;
+  font-size: 7pt;
+  color: #828282;
+}
+
+.fa-caret-up {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 2px;
 }
