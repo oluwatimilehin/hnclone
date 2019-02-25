@@ -5,6 +5,8 @@ import News from "./news";
 import NavBar from "./navbar";
 
 function Container() {
+  news.sort((a, b) => b.numPoints - a.numPoints);
+
   return (
     <div className="container">
       <NavBar />
@@ -15,154 +17,136 @@ function Container() {
 let news = [
   {
     id: "1",
-    author: "Timi Adeniran",
-    title: "How God changed my life",
-    url: "bible.org",
-    numPoints: 10000,
+    author: "Philip Yancey",
+    title: "Unexpected Guest",
+    url: "https://philipyancey.com/unexpected-guest",
+    numPoints: 53,
     timestamp: "2018-02-16 13:23:23",
     numComments: 132
   },
   {
     id: "2",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "A father is born",
+    url: "https://philipyancey.com/a-father-is-born",
+    numPoints: 7,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "3",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
+    author: "Randy Alcorn",
+    title: "Waiting when God seems silent",
+    url: "https://www.desiringgod.org/articles/waiting-when-god-seems-silent",
+    numPoints: 31,
+    timestamp: "2018-03-16 04:23:23",
     numComments: 11
   },
   {
     id: "4",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Aging Grace-fully",
+    url: "https://philipyancey.com/aging-grace-fully",
+    numPoints: 21,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "5",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Melancholy Angels",
+    url: "https://philipyancey.com/melancholy-angels",
+    numPoints: 60,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "6",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
-    numComments: 11
+    author: "Philip Yancey",
+    title: "Unexpected Guest",
+    url: "https://philipyancey.com/unexpected-guest",
+    numPoints: 28,
+    timestamp: "2018-02-16 13:23:23",
+    numComments: 132
   },
   {
     id: "7",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "A father is born",
+    url: "https://philipyancey.com/a-father-is-born",
+    numPoints: 4,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "8",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
+    author: "Randy Alcorn",
+    title: "Waiting when God seems silent",
+    url: "https://www.desiringgod.org/articles/waiting-when-god-seems-silent",
+    numPoints: 16,
+    timestamp: "2018-03-16 04:23:23",
     numComments: 11
   },
   {
     id: "9",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Aging Grace-fully",
+    url: "https://philipyancey.com/aging-grace-fully",
+    numPoints: 11,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "10",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Melancholy Angels",
+    url: "https://philipyancey.com/melancholy-angels",
+    numPoints: 103,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "11",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
-    numComments: 11
+    author: "Philip Yancey",
+    title: "Are You Happy?",
+    url: "https://philipyancey.com/are-you-happy",
+    numPoints: 84,
+    timestamp: "2018-02-16 13:23:23",
+    numComments: 132
   },
   {
     id: "12",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "A father is born",
+    url: "https://philipyancey.com/a-father-is-born",
+    numPoints: 48,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "13",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
+    author: "Randy Alcorn",
+    title: "Waiting when God seems silent",
+    url: "https://www.desiringgod.org/articles/waiting-when-god-seems-silent",
+    numPoints: 65,
+    timestamp: "2018-03-16 04:23:23",
     numComments: 11
   },
   {
     id: "14",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Aging Grace-fully",
+    url: "https://philipyancey.com/aging-grace-fully",
+    numPoints: 66,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   },
   {
     id: "15",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
-    numComments: 11
-  },
-  {
-    id: "16",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
-    timestamp: "2018-02-16 04:23:23",
-    numComments: 11
-  },
-  {
-    id: "17",
-    author: "Tami Adeniran",
-    title: "How Love changed my life",
-    url: "love.org",
-    numPoints: 11231,
+    author: "Philip Yancey",
+    title: "Melancholy Angels",
+    url: "https://philipyancey.com/melancholy-angels",
+    numPoints: 12,
     timestamp: "2018-02-16 04:23:23",
     numComments: 11
   }

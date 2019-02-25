@@ -3,6 +3,9 @@ import moment from "moment";
 import PropTypes from "prop-types";
 
 function NewsItem({ newsitem, number }) {
+  let url = new URL(newsitem.url);
+  url = url.hostname.replace("www.", "");
+
   return (
     <li className="list-item">
       <div className="side-bar">
@@ -12,8 +15,17 @@ function NewsItem({ newsitem, number }) {
         </span>
       </div>
       <div className="main-head">
-        <p> {newsitem.title}</p>
-        <a href={newsitem.url}> ({newsitem.url})</a>
+        <p>
+          {" "}
+          <a href={newsitem.url} className="news-title">
+            {" "}
+            {newsitem.title}{" "}
+          </a>
+        </p>
+        <a href={newsitem.url} className="link">
+          {" "}
+          ({url})
+        </a>
       </div>
       <div className="sub-menu">
         <ul className="sub">
