@@ -35,9 +35,9 @@ let news = [
   },
   {
     id: "3",
-    author: "Randy Alcorn",
-    title: "Waiting when God seems silent",
-    url: "https://www.desiringgod.org/articles/waiting-when-god-seems-silent",
+    author: "John Piper",
+    title: "The Grace of God Appeared",
+    url: "https://www.desiringgod.org/labs/the-grace-of-god-appeared",
     numPoints: 31,
     timestamp: "2018-03-16 04:23:23",
     numComments: 11
@@ -126,8 +126,8 @@ let news = [
   {
     id: "13",
     author: "Randy Alcorn",
-    title: "Waiting when God seems silent",
-    url: "https://www.desiringgod.org/articles/waiting-when-god-seems-silent",
+    title: "We Murder with Words Unsaid",
+    url: "https://www.desiringgod.org/articles/we-murder-with-words-unsaid",
     numPoints: 65,
     timestamp: "2018-03-16 04:23:23",
     numComments: 11
